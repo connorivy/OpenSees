@@ -49,3 +49,4 @@ class OpenSeesDependencies(ConanFile):
 
     def package_info(self):
         self.env_info.PATH.append(os.path.join(self.package_folder, "bin"))
+        self.cpp_info.system_libs = ["hdf5_hl_cpp"]
